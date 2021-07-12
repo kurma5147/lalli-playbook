@@ -7,12 +7,12 @@
      name: git
      state: present
   
-  -  name: install wget
-     apt:
-       name: wget
-       stae: present
+  - name: install tree on nodes
+    apt:
+     name: tree
+     state: present
 
-   -  name: install tree
-      apt:
-        name: tree
-        state: present
+  - name: install wget on nodes
+    apt:
+     name: wget
+     state: present
